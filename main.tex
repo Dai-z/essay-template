@@ -19,8 +19,17 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 \documentclass[11pt]{diazessay} % Font size (can be 10pt, 11pt or 12pt)
+
+\usepackage[style=numeric,
+            sorting=none,
+            defernumbers=true,
+            seconds=true,
+            bibstyle=gb7714-2015,
+            citestyle=gb7714-2015]{biblatex}
 \usepackage{ctex}
 \usepackage{xeCJK}
+
+\bibliography{ref.bib}
 
 \setCJKmainfont{Noto Sans CJK SC}
 \setmainfont{Noto Sans}
@@ -29,9 +38,9 @@
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
-\title{\textbf{侘寂 陈} \\ {\Large\itshape　}} % Title and subtitle
+\title{\textbf{侘寂——} \\ {\Large\itshape　}} % Title and subtitle
 
-\author{\textbf{陈} \\ \textit{219xxxxx \\浙江大学}} % Author and institution
+\author{\textbf{陈} \\ \textit{219***** \\浙江大学}} % Author and institution
 
 \date{\today} % Date, use \date{} for no date
 
@@ -120,9 +129,8 @@ Fusce eleifend porttitor arcu, id accumsan elit pharetra eget. Mauris luctus vel
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\bibliographystyle{gbt7714-unsrt}
-
-\bibliography{sample.bib}
+% \bibliography{sample.bib}
+\printbibliography
 
 %----------------------------------------------------------------------------------------
 
